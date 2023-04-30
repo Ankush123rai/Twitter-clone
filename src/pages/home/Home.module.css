@@ -1,0 +1,58 @@
+
+.container_post{
+    width: 45%;
+    margin-left: 25%;
+}
+.post{
+    width: 45%;
+    position: fixed;
+    top: 1.1rem;
+    font-weight: 700;
+}
+
+.home{
+    z-index: 999;
+    background: transparent;
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight:500;
+   padding-bottom: 5px;
+}
+.insideHome{
+    display: flex;
+}
+.transparent{
+    backdrop-filter: blur(90px);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin-top: -1rem;
+}
+
+.following{
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 500;
+    height: 2rem;
+   cursor: pointer;
+}
+.foryou{
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 500;
+    font-family: inherit;
+     height: 2rem;
+    cursor: pointer;
+}
+.following:hover{
+    background-color:gainsboro;
+}
+.foryou:hover{
+    background-color: gainsboro;
+}
+.hrline{
+    border:  #1DA1F2 3px solid;
+   
+}

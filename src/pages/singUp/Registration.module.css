@@ -1,0 +1,90 @@
+.main_div{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.form_box{
+    /* border:2px red solid; */
+    width: 45vw;
+    height: 90vh;
+    background-color: white;
+    border-radius: 15px;
+    
+    
+}
+.form_data{
+   
+    height: 100%;
+    margin: 0 128px;
+    /* text-align: center; */
+}
+.form_buttons{
+    display: flex;
+    flex-direction: column;
+    padding:0 20px;
+    /* border:2px red solid;  */
+    height: 100%;
+}
+.create_field{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.create_field p{
+    color: rgb(83, 100, 113);
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+}
+.create_field span{
+    color: blue;
+}
+.header{
+   
+    /* text-align: center; */
+    display: inline-flex;
+}
+.logo {
+    /* border:2px red solid; */
+    text-align: center;
+    width: 44vw;
+}
+.cross{
+    /* border:2px red solid; */
+    margin-top: 10px;
+}
+.hide{
+    display: none;
+
+}
+.hrline{
+    display: block;
+    flex-direction: row;
+}
+.textfield{
+    width: 100%;
+    /* border:2px red solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.signup{
+    margin-top: 10px;
+    margin-right: 50%;
+}
+.textfield span{
+    color: red;
+    font-size: small;
+    margin-top: -10px;
+}
+.bottum{
+    margin-top: 30px;
+}
+.hrr{
+    text-align: center;
+}
