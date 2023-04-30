@@ -88,6 +88,9 @@ a{
 .userData:hover{
     background-color: #dfe1e3;
 }
+.mobile_sidebar{
+    display: none;
+}
 
 @media screen and (max-width: 1000px) {
     .sidebar{
@@ -115,4 +118,83 @@ a{
    
 }
 
+@media screen and (max-width:768px) {
+    
+.sidebar {
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 2rem;
+    height: 100%;
+    border-right: 1px solid #eee;
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    gap:0.3rem;
+  }
+  .name{
+    display: none;
+  }
+    .email{
+        display: none;
+    }
+    .More{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+       
+        .sidebar .list{
+            display: none;
+        }
+        .sidebar button{
+            display: none;
+        }
+        .sidebar .logo{
+            display: none;
+        }
+        .pimage{
+            display: none;
+        }
+        .More{
+            display: none;
+        }
+        .mobile_sidebar{
+            display: block;
+            position: fixed;
+            top: 1rem;
 
+        }
+        
+}
+ .responsive{
+    width: 15%;
+    position: fixed;
+    width: 50vw;
+    top: 0;
+    left:1rem;
+    height: 100%;
+    border-right: 1px solid #eee;
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    gap:0.3rem;
+    background-color:#eee;
+ }
+ .responsive button{
+    background-color: rgb(26, 133, 220);
+    color: #fff;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 12vw;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+ }
+ .responsive .list span{
+    display: block;
+ }

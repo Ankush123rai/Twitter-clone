@@ -15,22 +15,10 @@ import PopupState, { bindTrigger, bindPopover } from "material-ui-popup-state";
 import MoreHorizSharpIcon from '@mui/icons-material/MoreHorizSharp';
 import data from '../../data/userFake_DATA .json'
 
-const UserPost = ({
-    // content,
-    // name,
-    // likeCount,
-    // commentCount,
-    // time,
-    // email,
-    // retweet,
-    // index,
-    // isLike,
-    // share,
-    // views,
-}) => {
+const UserPost = () => {
 
 
-    // const [like, setLike] = useState(isLike);
+    // const [like, setLike] = useState(i);
     // const [likesCount, setLikeCount] = useState(likeCount);
   
     function handleLike() {
@@ -143,7 +131,7 @@ const UserPost = ({
           <span className="like" onClick={handleLike}>
             {like ? (
               <Tooltip title="Like">
-                <FavoriteBorderIcon />
+                <FavoriteBorderIcon />{user.likeCount}
               </Tooltip>
             ) : (
               <Tooltip title="Unlike">

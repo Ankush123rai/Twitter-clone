@@ -20,8 +20,10 @@ import { bindTrigger, bindPopover } from "material-ui-popup-state";
 import Typography from "@mui/material/Typography";
 import { Dialog, DialogActions, DialogContent, DialogTitle } from "@mui/material";
 
-const SectionOne = () => {
 
+
+const SectionOne = () => {
+  const [mobileView,setMobileView]=useState(false)
   const [dialog, setDialog] = useState(false);
 
   const navigate = useNavigate()
@@ -40,7 +42,7 @@ const SectionOne = () => {
 
   return (
     <div className={style.sectionOne}>
-      <div className={style.sidebar}>
+      <div className={mobileView ? style.responsive: style.sidebar}>
         <div className={style.logo}>
           <Link to="/">
             <FaTwitter className={style.logo} />
@@ -168,7 +170,19 @@ const SectionOne = () => {
           </div>
         )}
       </PopupState>
+
+      <div className={style.mobile_sidebar} onClick={()=>setMobileView(!mobileView)}>
+              <Avatar
+                  sx={{ width: 45, height: 45 }}
+                  alt="Remy Sharp"
+                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                />
       </div>
+      </div>
+     
+                 
+                
+
     </div>
   );
 };
