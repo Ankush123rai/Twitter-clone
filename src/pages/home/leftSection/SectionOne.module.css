@@ -162,8 +162,8 @@ a{
         .mobile_sidebar{
             display: block;
             position: fixed;
-            top: 1rem;
-
+            top: .9rem;
+            left:1.3rem
         }
         
 }
@@ -177,16 +177,16 @@ a{
     border-right: 1px solid #eee;
     display: flex;
     flex-direction:column;
-    align-items: start;
-    gap:0.3rem;
+    align-items:start;
     background-color:#eee;
+    z-index: 999;
  }
  .responsive button{
     background-color: rgb(26, 133, 220);
     color: #fff;
     border-radius: 2rem;
     padding: .5rem 1rem;
-    font-size: 1.2rem;
+    font-size: .6rem;
     font-weight: 500;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -195,6 +195,40 @@ a{
     cursor: pointer;
     z-index: 9999;
  }
- .responsive .list span{
-    display: block;
+ .responsive .list{
+    padding:0 1rem;
+    margin: 0;
  }
+
+
+ .responsive .icons{
+    font-size: 2rem;
+    width: 3vw;
+ }
+ .responsive span{
+    display: block;
+    font-size: 1rem;
+    position: relative;
+    left:2rem;
+    bottom: 1.8rem;
+
+ }
+ .responsive .icons:hover{
+   background-color:transparent;
+ }
+ .responsive .list:hover{
+    background-color: transparent;
+  }
+  .responsive .name{
+    position: fixed;
+    top:1.6rem;
+    left: 5rem;
+  }
+  .responsive .email{
+    position: fixed;
+    top:3rem;
+    left: 5rem;
+    font-size: .7rem;
+  }
+  
+  
