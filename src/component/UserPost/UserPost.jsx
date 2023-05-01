@@ -18,20 +18,20 @@ import data from '../../data/userFake_DATA .json'
 const UserPost = () => {
 
 
-    // const [like, setLike] = useState(i);
-    // const [likesCount, setLikeCount] = useState(likeCount);
-  
-    function handleLike() {
-    //   setLike(!like);
-    //   if (like) {
-    //     setLikeCount(likesCount + 1);
-    //   } else {
-    //     setLikeCount(likesCount - 1);
-    //   }
+    const [like, setLike] = useState(false);
+    const [likesCount, setLikeCount] = useState(data.likeCount);
+    console.log(likesCount)
+    function handleLike(id) {
+     const newData = data.map((user) => {
+        if (user.id === id) {
+          return { ...user, likeCount: user.likeCount + 1 };
+        }
+        return user;
+      });
+      setLikeCount(newData);
+      setLike(!like);
     }
-        console.log(data)
-        let like;
-        let likesCount;
+       
 
   return (
 
@@ -128,7 +128,7 @@ const UserPost = () => {
               </div>
             )}
           </PopupState>
-          <span className="like" onClick={handleLike}>
+          <span className="like" onClick={()=>handleLike(user.id)}>
             {like ? (
               <Tooltip title="Like">
                 <FavoriteBorderIcon />{user.likeCount}

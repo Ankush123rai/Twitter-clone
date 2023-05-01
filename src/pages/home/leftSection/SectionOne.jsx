@@ -11,6 +11,7 @@ import {
   FaClipboardList,
   FaUserAlt,
   FaMehBlank,
+  FaSearch,
 } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import MoreHorizSharpIcon from "@mui/icons-material/MoreHorizSharp";
@@ -54,12 +55,21 @@ const SectionOne = () => {
            <span>home</span>
           </Link>
         </div>
-        <div className={style.list}>
+
+        <div className={style.list} style={{ display: mobileView ? "none" : "" }}>
           <Link >
             <FaHashtag className={style.icons} />
            <span> Explore</span>
           </Link>
         </div>
+
+        <div className={style.list} style={{ display: mobileView ? "" : "none" }}>
+          <Link >
+            <FaSearch className={style.icons} />
+           <span>Search</span>
+          </Link>
+        </div>
+
         <div className={style.list}>
           <Link >
             <FaRegBell className={style.icons} />
