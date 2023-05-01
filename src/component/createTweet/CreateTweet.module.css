@@ -35,10 +35,7 @@
     
     
   }
-  .div3 {
-    /* border: red 2px solid; */
-    width: 30%;
-  }
+
   .home {
     /* border: red 2px solid; */
     height: 2rem;
@@ -135,7 +132,15 @@
     cursor: pointer;
   }
   
-  @media screen and (max-width:1000) {
+  @media screen and (max-width:700) {
   
-      
+    .create_first {
+      display: flex;
+      padding: 0.7rem 1rem;
+      gap: 2rem;
+    }
+
+      .transparent{
+        width: 400px;
+      }
   }

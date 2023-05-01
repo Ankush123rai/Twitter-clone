@@ -55,3 +55,10 @@
     border:  #1DA1F2 3px solid;
    
 }
+@media screen and (max-width:1000px) {
+    .posts{
+        width: 100%;
+        position: fixed;
+        left :15%;
+    }
+}

@@ -4,7 +4,7 @@ import CreateTweet from '../../component/createTweet/CreateTweet'
 import UserFollowData from '../../component/UserFollowData';
 import UserPost from '../../component/UserPost/UserPost';
 import SectionOne from './leftSection/SectionOne';
-
+import RightSide from '../../component/rightSide/RightSide';
 
 const Home = () => {
   const [isTweet, setIsTweet] = useState(true);
@@ -37,7 +37,7 @@ const Home = () => {
     </div>
       <CreateTweet />    
       {isTweet ? <UserPost /> : <UserFollowData />}
-      
+    
     </div>
      
   )

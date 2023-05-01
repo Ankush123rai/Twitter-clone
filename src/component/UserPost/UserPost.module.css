@@ -51,3 +51,16 @@
   justify-content: space-between;
   margin: 10px 0;
 }
+
+@media screen and (max-width:768px) {
+  .postss{
+    width:400px
+  }
+  .postss__first{
+    width:100%
+  }
+  .postss__details{
+    width:100%
+  }
+
+}
